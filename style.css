@@ -1,0 +1,26 @@
+:root {
+  --degrees: 0deg;
+}
+
+.bg-conic {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent var(--degrees),
+    /* Change the colors to lightblue-blue */ white var(--degrees),
+    white 360deg
+  );
+}
+
+.hand {
+  transform-origin: bottom center;
+  transform: rotate(var(--degrees));
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
